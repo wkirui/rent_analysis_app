@@ -7,6 +7,6 @@ app = Flask(__name__)
 # enter dash app
 create_dash_app(app)
 
-@app.route('/')
-def start_application():
-    return("Hello world!")
+# @app.route('/')
+# def start_application():
+#     return("Hello world!")
