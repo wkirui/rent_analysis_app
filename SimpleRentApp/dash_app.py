@@ -78,11 +78,17 @@ def create_dash_app(server):
         # plot distribution
         fig = px.bar(df, x='bedrooms', y='avg_price', color='town',
                      hover_data=['avg_price'], hover_name='town', barmode='group',
-                     title="Average Rent Prices/Bedrooms",
                      labels={
                          'avg_price': 'Price (Ksh)', 'bedrooms': 'Bedrooms', 'town': 'Town'},
                      width=800, height=500)
         fig.update_layout(transition_duration=500)
+        fig.update_layout(title = {
+                              'text' :'Average Rent Price / Bedroom',
+                              'x':0.5,
+                              'y':0.95,
+                              'xanchor' :'center',
+                              'yanchor' :'top'
+                              })
 
         return fig
 
