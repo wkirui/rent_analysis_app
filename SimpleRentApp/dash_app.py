@@ -13,7 +13,7 @@ def create_dash_app(server):
     external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
     dash_app = dash.Dash(__name__,
                          server=server,
-                         routes_pathname_prefix='/',
+                         routes_pathname_prefix='/dash/',
                          external_stylesheets=[
                              external_stylesheets, dbc.themes.BOOTSTRAP]
                          )
