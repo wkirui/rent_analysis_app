@@ -1,3 +1,5 @@
 env/
 __pycache__/
 .DS_Store
+rent_analysis_app.tar
+rent_analysis_app_image.tar.gz
